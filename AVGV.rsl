@@ -1,0 +1,374 @@
+FILE,LAD 2:
+SOR,0 XIC,I:1/1 OTE,O:2/2 EOR,0
+RCM,Emergency Stop Button
+SOR,1 XIC,I:1/5 OTE,O:2/6 EOR,1
+RCM,Obstacle Detection
+SOR,2 BST,1 XIC,T4:20/TT NXB,1 XIC,I:1/2 BND,1 XIO,O:2/5 XIO,I:1/1 OTE,O:2/0 EOR,2
+RCM,Left Motor Control
+SOR,3 BST,1 XIC,T4:20/TT NXB,1 XIC,I:1/3 BND,1 XIO,O:2/5 XIO,I:1/1 OTE,O:2/1 EOR,3
+RCM,Right Motor Control
+SOR,4 XIC,C5:0/DN XIO,O:2/5 XIO,I:1/1 OTE,O:2/3 EOR,4
+RCM,2 seconds for Right Turn
+SOR,5 XIC,T4:1/TT XIO,O:2/5 XIO,I:1/1 OTE,O:2/4 EOR,5
+RCM,Explanation when the vehicle is at stop
+SOR,6 XIC,I:1/0 XIO,I:1/5 RTO,T4:20,100 EOR,6
+RCM,Travel for 10 sec and wait for 5 sec
+SOR,7 XIC,T4:20/DN TON,T4:1,50 XIC,T4:1/DN RES,T4:20 EOR,7
+RCM,
+SOR,8 XIC,T4:1/DN CTU,C5:0,2 EOR,8
+RCM,After 2 stops done take a right turn for 2 sec
+SOR,9 XIC,C5:0/DN TON,T4:3,20 XIC,T4:3/DN RES,C5:0 EOR,9
+RCM,
+SOR,10 XIC,T4:20/DN CTU,C5:1,8 EOR,10
+RCM,After 8 stops stop the vehicle (it Reaches to the starting point)
+SOR,11 XIC,C5:1/DN OTE,O:2/5 EOR,11
+RCM,
+SOR,12 XIC,I:1/4 BST,1 RES,T4:20 NXB,1 BST,2 RES,T4:21 NXB,2 BST,3 RES,C5:0 NXB,3 RES,C5:1 BND,3 BND,2 BND,1 EOR,12
+RCM,Reset all the timers and counters
+SOR,13 END,13
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+O:2/0 MOTOR L
+O:2/1 MOTOR R
+I:1/0 START
+I:2/0 Emergency Stop
+O:2/2 STOP
+I:1/1 Emergency Stop
+T4:1 WAIT
+I:1/2 Manual
+I:1/3 Manual
+T4:2/DN Right turn
+O:2/3 Turn Right
+T4:2 Right Turn
+T4:3 Reset Turn
+O:2/4 Speaker
+O:2/5 Trip Done
+I:1/4 RST all
+I:1/5 Obstacle
+T4:0 TRAVEL
+I:1/6 Proxy Sensor
+O:2/6 Obstacle Detected
